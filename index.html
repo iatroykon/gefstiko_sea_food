@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="theme-color" content="#0e4f73" />
+<title>Gefstiko — Seafood Taverna · Limenas, Thassos</title>
+<meta name="description" content="Gefstiko Seafood — a traditional Greek seafood taverna across from the harbour in Limenas, Thassos. Since 2005: hand-pick your wild catch from the ice, grilled to order over open flame." />
+<!-- Social share (set og:url + absolute image URLs once a domain is live) -->
+<meta property="og:type" content="restaurant.restaurant" />
+<meta property="og:site_name" content="Gefstiko Seafood" />
+<meta property="og:title" content="Gefstiko — Seafood Taverna · Limenas, Thassos" />
+<meta property="og:description" content="A traditional Greek seafood taverna on the harbour of Limenas, Thassos. Since 2005 — pick your wild catch from the ice, grilled to order over open flame." />
+<meta property="og:image" content="photo_7.jpg" />
+<meta property="og:locale" content="en_GB" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Gefstiko — Seafood Taverna · Limenas, Thassos" />
+<meta name="twitter:description" content="Pick your wild catch from the ice, grilled to order over open flame — on the harbour of Limenas, Thassos since 2005." />
+<meta name="twitter:image" content="photo_7.jpg" />
+<link rel="icon" href="photo_9.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+/* ============================================================
+   GEFSTIKO — SEAFOOD TAVERNA
+   Palette: Aegean blue + white  (traditional Greek)
+   ============================================================ */
+:root{
+  --white:#ffffff;
+  --paper-2:#eaf1f4;    /* pale sea blue */
+  --paper-3:#f2f7f9;    /* faintest blue tint */
+  --blue:#0e4f73;       /* deep Aegean blue (primary) */
+  --blue-2:#1a6d97;     /* brighter azure */
+  --blue-ink:#0a3a56;   /* darkest navy */
+  --sea:#2f86ab;        /* accent azure */
+  --ink:#173442;        /* body text on light */
+  --muted:#5d7280;      /* muted body */
+  --gold:#c19a4b;       /* restrained warm accent (details only) */
+  --gold-soft:#e6cf9b;
+  --line:rgba(14,79,115,.16);
+  --line-soft:rgba(14,79,115,.10);
+
+  --maxw:1240px;
+  --pad: clamp(1.2rem, 5vw, 5.5rem);
+  --sec: clamp(4rem, 9vw, 8rem);
+
+  --f-display:"Cormorant Garamond", Georgia, serif;
+  --f-body:"Manrope", system-ui, -apple-system, sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --shadow:0 26px 60px -30px rgba(10,58,86,.5);
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:clip}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{
+  font-family:var(--f-body);
+  background:var(--white);
+  color:var(--ink);
+  line-height:1.65;
+  overflow-x:clip;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+::selection{background:var(--blue);color:var(--white)}
+
+/* ---------- Typography ---------- */
+h1,h2,h3,h4{font-family:var(--f-display);font-weight:600;line-height:1.04;letter-spacing:.005em;color:var(--blue-ink)}
+.eyebrow{
+  font-family:var(--f-body);font-size:clamp(.62rem,1.3vw,.72rem);font-weight:700;
+  letter-spacing:.34em;text-transform:uppercase;color:var(--sea);
+  display:inline-flex;align-items:center;gap:.8em;
+}
+.eyebrow::before{content:"";width:clamp(1.2rem,3.5vw,2.2rem);height:2px;background:var(--gold)}
+.eyebrow.center{justify-content:center}
+.eyebrow.center::after{content:"";width:clamp(1.2rem,3.5vw,2.2rem);height:2px;background:var(--gold)}
+.lead{font-size:clamp(1.02rem,1.9vw,1.24rem);color:var(--muted);font-weight:400;max-width:54ch}
+
+/* ---------- Layout ---------- */
+.wrap{max-width:var(--maxw);margin:0 auto;padding-inline:var(--pad)}
+section{position:relative}
+.pad-y{padding-block:var(--sec)}
+.bg-pale{background:var(--paper-2)}
+.bg-tint{background:var(--paper-3)}
+.bg-blue{background:var(--blue);color:#eaf3f7}
+.bg-blue h2,.bg-blue h3,.bg-blue h4{color:#fff}
+
+/* ---------- Section ornament divider ---------- */
+.sec-div{display:flex;align-items:center;justify-content:center;gap:1.1rem;color:var(--gold);
+  padding-block:clamp(2rem,4vw,3.2rem)}
+.sec-div i{height:1px;width:min(120px,22vw);background:linear-gradient(90deg,transparent,var(--line))}
+.sec-div i:last-child{background:linear-gradient(90deg,var(--line),transparent)}
+.sec-div svg{width:44px;height:22px}
+
+/* ---------- Buttons ---------- */
+.btn{position:relative;display:inline-flex;align-items:center;gap:.6rem;
+  padding:.95rem 1.9rem;border-radius:2px;font-size:.76rem;font-weight:700;letter-spacing:.16em;
+  text-transform:uppercase;overflow:hidden;transition:color .5s var(--ease),transform .3s var(--ease);
+  will-change:transform}
+.btn.solid{background:var(--blue);color:#fff}
+.btn.solid::before{content:"";position:absolute;inset:0;background:var(--blue-ink);
+  transform:translateY(101%);transition:transform .45s var(--ease);z-index:0}
+.btn.solid:hover::before{transform:none}
+.btn.ghost{border:1.5px solid var(--blue);color:var(--blue)}
+.btn.ghost::before{content:"";position:absolute;inset:0;background:var(--blue);
+  transform:translateY(101%);transition:transform .45s var(--ease);z-index:0}
+.btn.ghost:hover{color:#fff}
+.btn.ghost:hover::before{transform:none}
+.btn.light{border:1.5px solid rgba(255,255,255,.6);color:#fff}
+.btn.light::before{content:"";position:absolute;inset:0;background:#fff;transform:translateY(101%);
+  transition:transform .45s var(--ease);z-index:0}
+.btn.light:hover{color:var(--blue-ink)}
+.btn.light:hover::before{transform:none}
+.btn span{position:relative;z-index:1}
+.btn .arw{position:relative;z-index:1;transition:transform .4s var(--ease)}
+.btn:hover .arw{transform:translateX(4px)}
+
+/* ---------- Reveal ---------- */
+[data-reveal]{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease),transform 1s var(--ease)}
+[data-reveal].in{opacity:1;transform:none}
+[data-reveal="left"]{transform:translateX(-42px)}
+[data-reveal="right"]{transform:translateX(42px)}
+[data-reveal="fade"]{transform:none}
+[data-reveal].in{transform:none}
+[data-stagger]>*{opacity:0;transform:translateY(30px);transition:opacity .8s var(--ease),transform .9s var(--ease)}
+[data-stagger].in>*{opacity:1;transform:none}
+.mask{overflow:hidden;display:block}
+.mask>span{display:block;transform:translateY(105%);transition:transform 1s var(--ease)}
+.in .mask>span{transform:none}
+@media (prefers-reduced-motion: reduce){
+  [data-reveal],[data-stagger]>*,.mask>span{opacity:1!important;transform:none!important;transition:none!important}
+}
+
+/* ============================================================
+   CUSTOM CURSOR
+   ============================================================ */
+.cursor,.cursor-dot{position:fixed;top:0;left:0;pointer-events:none;z-index:9999;border-radius:50%;will-change:transform}
+.cursor{width:34px;height:34px;border:1.5px solid var(--blue);transform:translate(-50%,-50%);
+  transition:width .3s var(--ease),height .3s var(--ease),background .3s,border-color .3s}
+.cursor-dot{width:5px;height:5px;background:var(--blue);transform:translate(-50%,-50%)}
+.cursor.grow{width:58px;height:58px;background:rgba(14,79,115,.08);border-color:var(--sea)}
+@media (hover:none),(pointer:coarse){.cursor,.cursor-dot{display:none}}
+
+/* ============================================================
+   PRELOADER
+   ============================================================ */
+#loader{position:fixed;inset:0;z-index:10000;background:var(--blue);
+  display:grid;place-items:center;transition:opacity .7s ease,visibility .7s}
+#loader.done{opacity:0;visibility:hidden}
+.loader-inner{text-align:center}
+.loader-inner .mark{width:clamp(52px,13vw,64px);height:clamp(52px,13vw,64px);object-fit:contain;margin:0 auto .9rem;background:#fff;border-radius:50%;padding:9px;animation:bob 2.2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-8px)}}
+.loader-name{font-family:var(--f-display);font-size:clamp(1.55rem,5.5vw,1.9rem);color:#fff;letter-spacing:.02em}
+.loader-sub{font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:#bcd7e5;margin-top:.3rem}
+.loader-bar{width:130px;height:2px;background:rgba(255,255,255,.2);margin:1rem auto 0;overflow:hidden}
+.loader-bar i{display:block;height:100%;width:0;background:var(--gold);animation:load 1.5s var(--ease) forwards}
+@keyframes load{to{width:100%}}
+
+/* ============================================================
+   NAV
+   ============================================================ */
+header.nav{position:sticky;top:0;z-index:900;background:rgba(255,255,255,.9);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line-soft);transition:box-shadow .4s,padding .4s var(--ease)}
+header.nav.scrolled{box-shadow:0 6px 30px -18px rgba(10,58,86,.4)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:2rem;padding-block:clamp(.6rem,1.4vw,.95rem)}
+.brand{display:flex;align-items:center;gap:.65rem;font-family:var(--f-display);font-size:1.5rem;color:var(--blue-ink)}
+.brand img{width:42px;height:42px;object-fit:contain}
+.brand b{font-weight:600}.brand small{font-size:.56rem;font-family:var(--f-body);letter-spacing:.28em;
+  text-transform:uppercase;color:var(--sea);display:block;line-height:1;margin-top:2px}
+.nav-links{display:flex;align-items:center;gap:clamp(1.2rem,2.4vw,2.3rem)}
+.nav-links a{position:relative;font-size:.76rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);padding:.3rem 0}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:2px;background:var(--gold);transition:width .4s var(--ease)}
+.nav-links a:hover{color:var(--blue)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{background:var(--blue);color:#fff!important;padding:.6rem 1.2rem!important;border-radius:2px;transition:background .4s}
+.nav-cta::after{display:none}
+.nav-cta:hover{background:var(--blue-ink)}
+.burger{display:none;flex-direction:column;gap:5px;width:28px;padding:6px 0;z-index:950}
+.burger span{height:2px;width:100%;background:var(--blue-ink);transition:.4s var(--ease)}
+.burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+.m-menu{position:fixed;inset:0;z-index:940;background:var(--blue);color:#fff;
+  display:flex;flex-direction:column;justify-content:center;gap:.2rem;padding:var(--pad);
+  transform:translateY(-100%);transition:transform .65s var(--ease);visibility:hidden}
+.m-menu.open{transform:none;visibility:visible}
+.m-menu a{font-family:var(--f-display);font-size:clamp(1.9rem,8vw,3rem);color:#fff;
+  padding:.3rem 0;border-bottom:1px solid rgba(255,255,255,.15);display:flex;align-items:baseline;gap:1rem}
+.m-menu a span{font-family:var(--f-body);font-size:.7rem;color:var(--gold);letter-spacing:.2em}
+.m-close{position:absolute;top:clamp(1rem,4vw,1.6rem);right:clamp(1.1rem,5vw,2rem);
+  width:46px;height:46px;display:grid;place-items:center;color:#fff;
+  border:1px solid rgba(255,255,255,.32);border-radius:50%;transition:background .3s}
+.m-close:hover{background:rgba(255,255,255,.12)}
+.m-close svg{width:22px;height:22px}
+
+/* ============================================================
+   HERO  (split: text left · photo right)
+   ============================================================ */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(120% 90% at 88% 0%, var(--paper-2) 0%, transparent 55%),
+  linear-gradient(180deg,#fff 0%,#f4f8fa 100%)}
+.hero .deco{position:absolute;pointer-events:none;z-index:0;color:var(--sea)}
+.hero .deco.d1{top:2%;right:-30px;width:340px;opacity:.07}
+.hero .deco.d2{bottom:-40px;right:44%;width:250px;opacity:.05}
+.hero .deco.waves{top:38%;left:-70px;width:min(430px,42vw);opacity:.08;color:var(--blue-2)}
+.hero .deco.ring{bottom:8%;left:6%;width:180px;height:180px;border-radius:50%;
+  border:1px solid var(--line);opacity:.6}
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.02fr .98fr;
+  gap:clamp(2rem,5vw,5rem);align-items:center;
+  padding-block:clamp(4rem,8vw,7rem) clamp(3.4rem,6vw,5.5rem);min-height:calc(92svh - 78px)}
+.hero-loc{display:inline-flex;align-items:center;gap:.6rem;margin-bottom:clamp(1rem,2vw,1.4rem);
+  font-size:.66rem;letter-spacing:.26em;text-transform:uppercase;color:var(--blue);
+  padding:.5rem 1rem;border:1px solid var(--line);border-radius:2px;background:rgba(255,255,255,.7)}
+.hero-loc .dot{width:7px;height:7px;border-radius:50%;background:var(--gold);animation:pulse 2.4s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(193,154,75,.6)}70%{box-shadow:0 0 0 8px rgba(193,154,75,0)}}
+.hero h1{font-size:clamp(2.7rem,6vw,5rem);line-height:1;color:var(--blue-ink);font-weight:600;margin-bottom:1.3rem}
+.hero h1 em{font-style:italic;font-weight:500;color:var(--sea);display:block}
+.hero-lead{font-size:clamp(1.04rem,1.6vw,1.26rem);color:var(--muted);max-width:44ch}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:clamp(1.6rem,2.6vw,2.2rem)}
+.hero-meta{display:flex;flex-wrap:wrap;gap:1.4rem 2rem;margin-top:clamp(1.8rem,3vw,2.4rem);
+  padding-top:clamp(1.4rem,2.4vw,1.8rem);border-top:1px solid var(--line)}
+.hero-meta .hm{display:flex;gap:.6rem;align-items:center}
+.hero-meta .hm svg{width:20px;height:20px;stroke:var(--sea);flex-shrink:0}
+.hero-meta .hm b{display:block;font-family:var(--f-display);font-size:1.1rem;color:var(--blue-ink);line-height:1.1}
+.hero-meta .hm span{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.hero-media{position:relative}
+.hero-media .accent-box{position:absolute;top:-16px;right:-16px;width:72%;height:72%;
+  border:2px solid var(--gold);border-radius:4px;z-index:0}
+.hero-media .frame{position:relative;z-index:1;overflow:hidden;border-radius:4px;box-shadow:var(--shadow)}
+.hero-media .frame img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform 1.4s var(--ease)}
+.hero-media .frame:hover img{transform:scale(1.05)}
+.hero-media .float-badge{position:absolute;z-index:2;left:clamp(-.6rem,-1vw,-1.4rem);bottom:1.4rem;
+  background:var(--white);padding:.85rem 1.25rem;border-radius:3px;box-shadow:var(--shadow);
+  display:flex;align-items:center;gap:.8rem}
+.hero-media .float-badge .fb-i{width:34px;height:34px;background:var(--blue);border-radius:50%;
+  display:grid;place-items:center;color:#fff;flex-shrink:0}
+.hero-media .float-badge .fb-i svg{width:17px;height:17px}
+.hero-media .float-badge b{font-family:var(--f-display);font-size:1.15rem;color:var(--blue-ink);line-height:1;display:block}
+.hero-media .float-badge span{font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+/* ============================================================
+   ABOUT  (photo LEFT · text RIGHT · distinct treatment)
+   ============================================================ */
+.about-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(2.5rem,6vw,6rem);align-items:center}
+.about-media{position:relative}
+.about-media .frame{position:relative;overflow:hidden;border-radius:4px;box-shadow:var(--shadow);z-index:1}
+.about-media .frame img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform 1.3s var(--ease)}
+.about-media .frame:hover img{transform:scale(1.05)}
+.about-media .est{position:absolute;z-index:2;top:1.2rem;left:-1.1rem;background:var(--blue);color:#fff;
+  padding:1rem 1.15rem;border-radius:3px;text-align:center;box-shadow:var(--shadow)}
+.about-media .est b{font-family:var(--f-display);font-size:1.9rem;line-height:1;display:block;color:#fff}
+.about-media .est span{font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-soft)}
+.about-media .stripe{position:absolute;z-index:0;inset:auto -1.2rem -1.2rem 30%;height:64%;
+  background:var(--paper-2);border-radius:4px}
+.about-media .quote-tab{position:absolute;z-index:2;right:-.8rem;bottom:1.6rem;max-width:15rem;
+  background:var(--white);border-left:3px solid var(--gold);padding:.9rem 1.1rem;border-radius:3px;box-shadow:var(--shadow)}
+.about-media .quote-tab p{font-family:var(--f-display);font-style:italic;font-size:1.02rem;color:var(--blue-ink);line-height:1.3}
+.section-title{font-size:clamp(2rem,4.8vw,3.6rem);margin:1.2rem 0 1.3rem;color:var(--blue-ink)}
+.story-p{margin-bottom:1rem;color:var(--muted);font-size:clamp(1rem,1.5vw,1.08rem)}
+.about-feats{display:grid;gap:.2rem;margin:1.6rem 0 0}
+.about-feats .af{display:flex;gap:.9rem;align-items:flex-start;padding:.85rem 0;border-top:1px solid var(--line)}
+.about-feats .af svg{width:22px;height:22px;stroke:var(--sea);flex-shrink:0;margin-top:2px}
+.about-feats .af b{font-family:var(--f-body);font-size:.95rem;font-weight:700;color:var(--blue-ink)}
+.about-feats .af p{font-size:.88rem;color:var(--muted);margin:0}
+.mini-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.8rem;padding-top:1.6rem;border-top:1px solid var(--line)}
+.mini-stats b{display:block;font-family:var(--f-display);font-size:clamp(1.8rem,3.4vw,2.4rem);color:var(--blue);line-height:1}
+.mini-stats span{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+/* ============================================================
+   SIGNATURES  (elevated cards on a decorated field)
+   ============================================================ */
+.sig-sec{position:relative;overflow:hidden}
+.sig-deco{position:absolute;pointer-events:none;z-index:0;color:var(--sea)}
+.sig-deco.s1{top:7%;right:-40px;width:min(340px,32vw);opacity:.05}
+.sig-deco.s2{bottom:4%;left:-54px;width:min(300px,30vw);opacity:.045}
+.sig-sec .wrap{position:relative;z-index:2}
+.sig-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:1.4rem;margin-bottom:clamp(2.2rem,4.5vw,3.4rem)}
+.sig-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.2rem,2.4vw,2rem)}
+.dish-card{position:relative;background:#fff;border:1px solid var(--line-soft);border-radius:4px;overflow:hidden;
+  display:flex;flex-direction:column;transition:transform .5s var(--ease),box-shadow .5s;
+  box-shadow:0 22px 50px -36px rgba(10,58,86,.55)}
+.dish-card:hover{transform:translateY(-10px);box-shadow:var(--shadow)}
+.dish-card .pic{position:relative;overflow:hidden;aspect-ratio:4/3}
+.dish-card .pic img{width:100%;height:100%;object-fit:cover;transition:transform 1.3s var(--ease)}
+.dish-card:hover .pic img{transform:scale(1.08)}
+.dish-card .pic::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(0deg,rgba(8,44,66,.28),transparent 46%)}
+.dish-card .kick{position:absolute;top:.9rem;left:.9rem;z-index:2;background:rgba(255,255,255,.94);color:var(--blue);
+  font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;padding:.35rem .7rem;border-radius:2px}
+.dish-card .no{position:absolute;bottom:.6rem;right:1rem;z-index:2;font-family:var(--f-display);
+  font-size:2.4rem;color:#fff;line-height:1;text-shadow:0 2px 14px rgba(8,44,66,.6)}
+.dish-card .body{padding:1.5rem 1.5rem 1.7rem;display:flex;flex-direction:column;flex:1}
+.dish-card h3{font-size:clamp(1.55rem,2.2vw,1.95rem);color:var(--blue-ink);line-height:1.05}
+.dish-card p{margin-top:.5rem;font-size:.92rem;color:var(--muted);flex:1}
+.dish-card .tag{align-self:flex-start;margin-top:1.1rem;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--sea);border-top:2px solid var(--gold);padding-top:.5rem}
+.sig-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:1.2rem;
+  margin-top:clamp(2.4rem,4.5vw,3.4rem);text-align:center;color:var(--muted);font-size:.95rem}
+.sig-foot b{color:var(--blue)}
+/* section divider (hero → about) — clear medallion */
+.hair-div{display:flex;align-items:center;justify-content:center;gap:clamp(1rem,2.4vw,1.8rem);
+  padding-block:clamp(1.8rem,3.6vw,3rem)}
+.hair-div i{height:2px;width:min(220px,30vw);border-radius:2px;
+  background:linear-gradient(90deg,transparent,rgba(14,79,115,.3))}
+.hair-div i:last-child{background:linear-gradient(90deg,rgba(14,79,115,.3),transparent)}
+.hd-badge{width:clamp(54px,7vw,70px);height:clamp(54px,7vw,70px);border-radius:50%;flex-shrink:0;
+  display:grid;place-items:center;background:#fff;border:1.5px solid var(--gold);color:var(--gold);
+  box-shadow:0 14px 32px -14px rgba(10,58,86,.55)}
+.hd-badge svg{width:clamp(28px,3.6vw,36px);height:auto}
+
+/* ============================================================
+   MENU (tabbed) with faint SVG backdrop
+   ============================================================ */
+.menu-sec{position:relative;overflow:hidden}
+.menu-deco{position:absolute;pointer-events:none;z-index:0;color:var(--sea)}
+.menu-deco.md1{top:6%;right:-40px;width:min(360px,34vw);opacity:.05}
+.menu-deco.md2{bottom:4%;left:-50px;width:min(300px,30vw);opacity:.045}
+.menu-sec .wrap{position:relative;z-index:2}
+.menu-head{text-align:center;max-width:58ch;margin:0 auto clamp(2rem,4vw,3rem)}
+.menu-head .lead{margin:1.2rem auto 0}
+.menu-tabs{display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center;margin-bottom:clamp(2.2rem,4vw,3.4rem)}
+.menu-tab{position:relative;padding:.68rem 1.3rem;border:1px solid var(--line);border-radius:2px;
+  font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);
+  background:var(--white);transition:.35s var(--ease)}
+.menu-tab:hover{border-color:var(--blue)}
+.menu-tab.active{background:var(--blue);color:#fff;border-color:var(--blue);box-shadow:var(--shadow)}
+.menu-tab .gk{display:block;font-family:var(--f-display);font-size:.7rem;letter-spacing:.05em;
+  text-transform:none;color:var(--gold);margin-top:.15rem}
+.menu-tab.active .gk{color:var(--gold-soft)}
+.menu-panel{display:none}
+.menu-panel.active{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(1.4rem,3vw,3rem) clamp(2.5rem,6vw,6rem);
+  animation:fadeUp .55s var(--ease)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.dish{display:flex;justify-content:space-between;gap:1rem;padding:.9rem 0;border-bottom:1px dashed var(--line-soft);transition:padding-left .35s var(--ease)}
+.dish:hover{padding-left:.5rem}
+.dish .d-name{font-family:var(--f-display);font-size:1.28rem;color:var(--blue-ink);font-weight:600}
+.dish .d-desc{font-size:.84rem;color:var(--muted);margin-top:.1rem;max-width:46ch}
+.dish .d-price{font-family:var(--f-display);font-size:1rem;color:var(--gold);white-space:nowrap;letter-spacing:.02em}
+.dish .d-tag{display:inline-block;font-size:.56rem;letter-spacing:.16em;text-transform:uppercase;color:var(--sea);
+  border:1px solid var(--line);padding:.08rem .45rem;border-radius:2px;margin-left:.5rem;vertical-align:middle}
+.menu-note{text-align:center;margin-top:clamp(2.2rem,4.5vw,3.4rem);font-size:.9rem;color:var(--muted)}
+.menu-note b{color:var(--blue)}
+
+/* ============================================================
+   SETTING (harbour views · parallax · wave edges)
+   ============================================================ */
+.ambiance{position:relative;overflow:hidden;min-height:clamp(520px,74vh,720px);display:flex;align-items:center}
+.ambiance-bg{position:absolute;inset:-12% 0;z-index:0}
+.ambiance-bg img{width:100%;height:100%;object-fit:cover;will-change:transform}
+.ambiance::after{content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(90deg,rgba(8,44,66,.92) 0%,rgba(8,44,66,.66) 42%,rgba(8,44,66,.28) 100%)}
+.ambiance .wrap{position:relative;z-index:3}
+.wave-edge{position:absolute;left:0;width:100%;line-height:0;z-index:2}
+.wave-edge svg{display:block;width:100%;height:clamp(34px,5vw,60px)}
+.wave-edge.top{top:-1px}
+.wave-edge.bot{bottom:-1px}
+.ambiance-card{max-width:46rem;color:#fff}
+.amb-orn{display:flex;align-items:center;gap:.9rem;color:var(--gold-soft);margin-bottom:1rem}
+.amb-orn i{height:1px;width:56px;background:linear-gradient(90deg,var(--gold-soft),transparent)}
+.ambiance h2{color:#fff;font-size:clamp(2.1rem,5.2vw,3.8rem);margin-bottom:1.1rem}
+.ambiance p{color:rgba(255,255,255,.92);font-size:clamp(1rem,1.7vw,1.2rem);max-width:46ch}
+.amb-feats{display:grid;grid-template-columns:repeat(3,auto);gap:2.2rem;margin:2rem 0 0;flex-wrap:wrap}
+.amb-feats .aff b{font-family:var(--f-display);font-size:clamp(1.6rem,2.6vw,2.1rem);color:#fff;line-height:1;display:block}
+.amb-feats .aff span{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:#bcd7e5}
+.pills{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:2rem}
+.pill{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:#fff;
+  border:1px solid rgba(255,255,255,.4);padding:.5rem 1rem;border-radius:2px;background:rgba(8,44,66,.3);backdrop-filter:blur(4px)}
+.pill b{color:var(--gold-soft)}
+
+/* ============================================================
+   PICK YOUR CATCH (horizontal timeline · creative)
+   ============================================================ */
+.catch-head{text-align:center;max-width:58ch;margin:0 auto}
+.timeline{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(1.2rem,2.4vw,2rem);
+  margin-top:clamp(2.6rem,5vw,4rem)}
+.tl-track{position:absolute;top:31px;left:12%;right:12%;height:2px;background:var(--line);z-index:0}
+.tl-track i{position:absolute;left:0;top:0;height:100%;width:0;background:var(--sea);transition:width 1.6s var(--ease) .2s}
+.timeline.in .tl-track i{width:100%}
+.tl-step{position:relative;z-index:1;text-align:center}
+.tl-step .dot{width:64px;height:64px;border-radius:50%;background:var(--white);border:2px solid var(--line);
+  color:var(--blue);display:grid;place-items:center;margin:0 auto 1.1rem;
+  font-family:var(--f-display);font-size:1.5rem;transition:.5s var(--ease)}
+.tl-step:hover .dot{background:var(--blue);color:#fff;border-color:var(--blue);transform:translateY(-4px)}
+.tl-step .dot svg{width:26px;height:26px}
+.tl-step h4{font-size:1.35rem;color:var(--blue-ink);margin-bottom:.3rem}
+.tl-step p{font-size:.9rem;color:var(--muted);max-width:26ch;margin:0 auto}
+.ice-note{text-align:center;margin-top:clamp(2.4rem,4.5vw,3.4rem)}
+.ice-note .lbl{font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sea);margin-bottom:1rem;display:block}
+.ice-chips{display:flex;flex-wrap:wrap;gap:.55rem;justify-content:center}
+.ice-chip{font-size:.78rem;color:var(--blue-ink);background:var(--white);border:1px solid var(--line);
+  padding:.5rem .9rem;border-radius:2px;transition:.35s}
+.ice-chip:hover{border-color:var(--sea);transform:translateY(-2px)}
+.ice-chip small{color:var(--sea);font-weight:600;margin-left:.35rem;letter-spacing:.04em}
+
+/* ============================================================
+   REVIEWS
+   ============================================================ */
+.rev-sec{position:relative;overflow:hidden}
+.rev-deco{position:absolute;pointer-events:none;z-index:0;color:var(--sea)}
+.rev-deco.r1{top:9%;left:-46px;width:min(300px,30vw);opacity:.045}
+.rev-deco.r2{bottom:6%;right:-40px;width:min(280px,28vw);opacity:.05}
+.rev-mark{position:absolute;z-index:0;top:-3%;left:3%;font-family:var(--f-display);line-height:1;
+  font-size:clamp(11rem,26vw,26rem);color:var(--blue);opacity:.05;pointer-events:none}
+.rev-sec .wrap{position:relative;z-index:2}
+.rev-head{text-align:center;max-width:52ch;margin:0 auto clamp(2.2rem,4.5vw,3.4rem)}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.2rem,2.4vw,1.8rem)}
+.review{background:var(--white);border:1px solid var(--line-soft);border-radius:3px;padding:2rem 1.8rem;
+  position:relative;transition:transform .5s var(--ease),box-shadow .5s}
+.review:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.review .quote{font-family:var(--f-display);font-size:3rem;color:var(--gold);line-height:.6;height:.6em;display:block}
+.review .stars{color:var(--gold);letter-spacing:.15em;font-size:.9rem;margin:.4rem 0 .8rem}
+.review p{font-family:var(--f-display);font-size:1.2rem;color:var(--blue-ink);font-style:italic;line-height:1.4}
+.review .who{margin-top:1.2rem;padding-top:1rem;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+.review .who b{font-family:var(--f-body);font-size:.86rem;font-weight:700;color:var(--ink)}
+.review .who span{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.rev-summary{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:1rem 2.4rem;
+  margin-top:clamp(2.4rem,4.5vw,3.4rem);padding-top:clamp(2rem,3.5vw,2.6rem);border-top:1px solid var(--line)}
+.rev-summary .rs{text-align:center}
+.rev-summary .rs .stars{color:var(--gold);letter-spacing:.15em;font-size:1rem}
+.rev-summary .rs b{display:block;font-family:var(--f-display);font-size:1.5rem;color:var(--blue-ink);line-height:1.1}
+.rev-summary .rs span{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.rev-summary .sep{width:1px;height:38px;background:var(--line)}
+
+/* ============================================================
+   GALLERY (mosaic masonry)
+   ============================================================ */
+.gal-sec{position:relative;overflow:hidden}
+.gal-deco{position:absolute;pointer-events:none;z-index:0;color:var(--sea)}
+.gal-deco.g1{top:5%;right:-50px;width:min(340px,32vw);opacity:.05}
+.gal-deco.g2{bottom:4%;left:-50px;width:min(300px,30vw);opacity:.045}
+.gal-sec .wrap{position:relative;z-index:2}
+.gal-head{text-align:center;max-width:52ch;margin:0 auto clamp(2rem,4vw,3rem)}
+.feed-handle{display:inline-flex;align-items:center;gap:.5rem;margin-top:1rem;font-size:1rem;
+  font-weight:600;letter-spacing:.02em;color:var(--blue)}
+.feed-handle svg{width:20px;height:20px}
+.gbento{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(.55rem,1.1vw,.9rem);grid-auto-flow:dense}
+.gcell{position:relative;overflow:hidden;border-radius:3px;display:block;aspect-ratio:1}
+.gcell.big{grid-column:span 2;grid-row:span 2}
+.gcell img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.gcell:hover img{transform:scale(1.07)}
+.gcell .ov{position:absolute;inset:0;display:flex;align-items:flex-end;padding:1rem;color:#fff;opacity:0;
+  background:linear-gradient(0deg,rgba(8,44,66,.82),rgba(8,44,66,.1) 55%,transparent 78%);transition:opacity .4s var(--ease)}
+.gcell:hover .ov{opacity:1}
+.gcell.big .ov span{font-size:1rem}
+.gcell .ov span{font-size:.8rem;letter-spacing:.03em;display:flex;align-items:center;gap:.45rem}
+.gcell .ov svg{width:16px;height:16px;flex-shrink:0}
+.gcell.follow{background:linear-gradient(150deg,var(--blue-2),var(--blue) 70%);aspect-ratio:1;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.55rem;text-align:center;
+  padding:1.4rem;color:#fff;border-radius:3px}
+.gcell.follow .ig{width:46px;height:46px;border:1.5px solid rgba(255,255,255,.5);border-radius:50%;
+  display:grid;place-items:center;transition:.4s var(--ease)}
+.gcell.follow:hover .ig{background:#fff;color:var(--blue);border-color:#fff;transform:translateY(-3px)}
+.gcell.follow .ig svg{width:22px;height:22px}
+.gcell.follow b{font-family:var(--f-display);font-size:1.5rem;color:#fff;line-height:1.05}
+.gcell.follow span{font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-soft)}
+.gal-cta{text-align:center;margin-top:clamp(2rem,4vw,3rem)}
+
+/* ============================================================
+   VISIT
+   ============================================================ */
+.visit-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(2.5rem,6vw,5rem);align-items:start}
+.visit .eyebrow{margin-bottom:1.4rem}
+.visit h2{font-size:clamp(2.5rem,5.4vw,4rem);margin:0 0 1.9rem;color:var(--blue-ink);line-height:1.02}
+.visit .lead{font-size:clamp(1.02rem,1.5vw,1.15rem);max-width:42ch}
+.info-block{display:grid;gap:1.4rem;margin-top:clamp(2.4rem,4vw,3.2rem)}
+.info{display:flex;gap:1.1rem;align-items:flex-start;padding-bottom:1.4rem;border-bottom:1px solid var(--line)}
+.info .ico{width:34px;height:34px;flex-shrink:0;color:var(--blue);background:var(--paper-2);border-radius:50%;padding:7px}
+.info h4{font-family:var(--f-body);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:.35rem}
+.info p,.info a{font-family:var(--f-display);font-size:1.3rem;color:var(--blue-ink);line-height:1.35}
+.info a:hover{color:var(--sea)}
+.info .sub{font-family:var(--f-body);font-size:.84rem;color:var(--muted);margin-top:.2rem}
+.map-card{position:relative;border-radius:3px;overflow:hidden;min-height:clamp(380px,50vw,540px);box-shadow:var(--shadow)}
+.map-card iframe{width:100%;height:100%;border:0;position:absolute;inset:0}
+.map-badge{position:absolute;left:1rem;bottom:1rem;z-index:2;background:rgba(255,255,255,.95);
+  padding:.8rem 1.1rem;border-radius:2px;box-shadow:var(--shadow)}
+.map-badge b{font-family:var(--f-display);font-size:1.15rem;color:var(--blue-ink);display:block}
+.map-badge span{font-size:.76rem;color:var(--muted)}
+.hours-table{margin-top:.4rem}
+.hours-row{display:flex;justify-content:space-between;padding:.4rem 0;border-bottom:1px dashed var(--line-soft);font-size:.94rem}
+.hours-row span:first-child{color:var(--ink)}
+.hours-row span:last-child{color:var(--blue);font-family:var(--f-display);font-size:1.05rem}
+
+/* ============================================================
+   FOOTER (compact)
+   ============================================================ */
+footer{background:#062435;color:#c8dbe6;padding:clamp(3rem,6vw,4.5rem) 0 1.8rem}
+.foot-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:2.2rem;align-items:start}
+.foot-brand{display:flex;align-items:center;gap:.7rem;margin-bottom:1rem}
+.foot-brand img{width:48px;height:48px;object-fit:contain;background:#fff;border-radius:50%;padding:5px}
+.foot-brand b{font-family:var(--f-display);font-size:1.5rem;color:#fff}
+.foot-desc{color:#9fc0d2;font-size:.9rem;max-width:34ch;margin-bottom:1.2rem}
+.foot-col h5{font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.9rem}
+.foot-col a,.foot-col p{display:block;font-size:.9rem;color:#c8dbe6;margin-bottom:.55rem;transition:color .3s,transform .3s}
+.foot-col a:hover{color:#fff;transform:translateX(3px)}
+.socials{display:flex;gap:.7rem;margin-top:.2rem}
+.socials .soc{width:40px;height:40px;margin:0;border:1px solid rgba(255,255,255,.22);border-radius:50%;
+  display:inline-flex;align-items:center;justify-content:center;line-height:0;
+  transition:transform .4s var(--ease),background .4s,border-color .4s;color:#fff}
+.socials .soc:hover{background:var(--gold);border-color:var(--gold);transform:translateY(-3px)}
+.socials .soc svg{width:17px;height:17px;display:block}
+.foot-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem;margin-top:clamp(2.2rem,4vw,3rem);
+  padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.14);font-size:.76rem;color:#8fb0c2}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media(max-width:1000px){
+  .sig-grid{grid-template-columns:1fr 1fr}
+  .rev-grid{grid-template-columns:1fr 1fr}
+  .foot-top{grid-template-columns:1fr 1fr;gap:2rem}
+  .gbento{grid-template-columns:repeat(3,1fr)}
+  .timeline{grid-template-columns:repeat(2,1fr);gap:2.4rem 1.4rem}
+  .tl-track{display:none}
+}
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:2.4rem;min-height:0;text-align:center;
+    padding-block:clamp(2.6rem,7vw,4rem) clamp(2.6rem,6vw,4rem)}
+  .hero-copy{display:flex;flex-direction:column;align-items:center}
+  .hero-lead{margin-inline:auto}
+  .hero-actions{justify-content:center}
+  .hero-meta{justify-content:center}
+  .hero-media{max-width:360px;margin-inline:auto}
+  .hero h1 em{display:inline}
+  .about-grid{grid-template-columns:1fr;gap:2.6rem}
+  .about-media{order:2;max-width:360px;margin-inline:auto}
+  .sig-head{flex-direction:column;align-items:center;text-align:center}
+}
+@media(max-width:820px){
+  .nav-links{display:none}
+  .burger{display:flex}
+  .visit-grid{grid-template-columns:1fr;gap:2.4rem}
+  .menu-panel.active{grid-template-columns:1fr;gap:2.2rem}
+  .rev-grid{grid-template-columns:1fr}
+  .amb-feats{gap:1.6rem 2rem}
+}
+@media(max-width:560px){
+  .sig-grid{grid-template-columns:1fr}
+  .dish-card .pic{aspect-ratio:16/10}
+  .mini-stats{grid-template-columns:1fr 1fr;gap:1.2rem}
+  .foot-top{grid-template-columns:1fr;gap:1.8rem}
+  .dish{flex-direction:column;gap:.15rem}
+  .info p,.info a{font-size:1.15rem}
+  .gbento{grid-template-columns:repeat(2,1fr);gap:.6rem}
+  .gcell.big{grid-column:auto;grid-row:auto}
+  .hero-media{max-width:300px}
+  .hero-media .float-badge{left:.6rem}
+  .about-media{max-width:300px}
+  .about-media .quote-tab{display:none}
+  .btn{padding:.72rem 1.25rem;font-size:.68rem;letter-spacing:.12em}
+  .review{padding:1.5rem 1.35rem}
+  .review p{font-size:1.08rem}
+  .timeline{grid-template-columns:1fr;gap:1.4rem}
+  .tl-step{display:grid;grid-template-columns:auto 1fr;column-gap:1rem;row-gap:.2rem;text-align:left;align-items:center}
+  .tl-step .dot{grid-row:1 / span 2;margin:0;width:50px;height:50px}
+  .tl-step .dot svg{width:22px;height:22px}
+  .tl-step h4{grid-column:2;align-self:end;margin:0}
+  .tl-step p{grid-column:2;align-self:start;max-width:none;margin:0}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Gefstiko Seafood",
+  "servesCuisine": ["Seafood", "Greek"],
+  "priceRange": "€€",
+  "image": "photo_7.jpg",
+  "foundingDate": "2005",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Avgoustou Theologiti",
+    "addressLocality": "Limenas, Thassos",
+    "postalCode": "640 04",
+    "addressCountry": "GR"
+  },
+  "telephone": "+30 698 512 9828",
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "10:00",
+    "closes": "23:30"
+  }],
+  "acceptsReservations": "False",
+  "sameAs": [
+    "https://instagram.com/gefstiko_taverna",
+    "https://facebook.com/gefstiko"
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- ============ PRELOADER ============ -->
+<div id="loader">
+  <div class="loader-inner">
+    <img class="mark" src="photo_9.jpg" alt="Gefstiko" />
+    <div class="loader-name">Gefstiko</div>
+    <div class="loader-sub">Seafood · Thassos</div>
+    <div class="loader-bar"><i></i></div>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="#home" class="brand" data-magnetic>
+      <img src="photo_9.jpg" alt="Gefstiko logo" />
+      <span><b>Gefstiko</b><small>Seafood Taverna</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about" data-magnetic>About</a>
+      <a href="#signatures" data-magnetic>Dishes</a>
+      <a href="#menu" data-magnetic>Menu</a>
+      <a href="#catch" data-magnetic>The Catch</a>
+      <a href="#reviews" data-magnetic>Reviews</a>
+      <a href="#visit" class="nav-cta" data-magnetic>Find Us</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<nav class="m-menu" id="mMenu">
+  <button class="m-close" id="mClose" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <a href="#about"><span>01</span> About</a>
+  <a href="#signatures"><span>02</span> Dishes</a>
+  <a href="#menu"><span>03</span> Menu</a>
+  <a href="#catch"><span>04</span> The Catch</a>
+  <a href="#reviews"><span>05</span> Reviews</a>
+  <a href="#visit"><span>06</span> Find Us</a>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <svg class="deco d1" viewBox="0 0 100 40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 20 Q34 2 66 20 Q34 38 8 20Z"/><path d="M66 20 L96 6 L86 20 L96 34Z"/><circle cx="24" cy="17" r="1.8" fill="currentColor"/></svg>
+  <svg class="deco d2" viewBox="0 0 100 40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 20 Q34 2 66 20 Q34 38 8 20Z"/><path d="M66 20 L96 6 L86 20 L96 34Z"/><circle cx="24" cy="17" r="1.8" fill="currentColor"/></svg>
+  <svg class="deco waves" viewBox="0 0 120 90" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M2 14c12-9 24-9 36 0s24 9 36 0 24-9 36 0"/>
+    <path d="M2 34c12-9 24-9 36 0s24 9 36 0 24-9 36 0"/>
+    <path d="M2 54c12-9 24-9 36 0s24 9 36 0 24-9 36 0"/>
+    <path d="M2 74c12-9 24-9 36 0s24 9 36 0 24-9 36 0"/>
+  </svg>
+  <span class="deco ring"></span>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div data-reveal="fade"><span class="hero-loc"><span class="dot"></span> Limenas · Thassos · Greece</span></div>
+        <h1 data-reveal><span class="mask"><span>Gefstiko</span></span><span class="mask"><span><em>Seafood.</em></span></span></h1>
+        <p class="hero-lead" data-reveal>A traditional Greek taverna on the harbour's edge since 2005 — pick your wild catch from the ice, and we grill it clean over open flame.</p>
+        <div class="hero-actions" data-reveal>
+          <a href="#menu" class="btn solid" data-magnetic><span>See the Menu</span> <span class="arw">→</span></a>
+          <a href="#catch" class="btn ghost" data-magnetic><span>How it works</span></a>
+        </div>
+        <div class="hero-meta" data-reveal>
+          <div class="hm">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <div><b>10:00 – 23:30</b><span>Open every day</span></div>
+          </div>
+          <div class="hm">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            <div><b>On the harbour</b><span>Across from the boats</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-media" data-reveal="right">
+        <span class="accent-box"></span>
+        <div class="frame"><img src="photo_3.jpg" alt="Evening table setting at Gefstiko by the Limenas harbour" fetchpriority="high" /></div>
+        <div class="float-badge">
+          <span class="fb-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 12c3-4 6-4 9 0s6 4 9 0"/><path d="M3 17c3-4 6-4 9 0s6 4 9 0"/></svg></span>
+          <span><b>Since 2005</b><span>A Thassos institution</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HERO → ABOUT DIVIDER ============ -->
+<div class="wrap"><div class="hair-div" data-reveal="fade"><i></i>
+  <span class="hd-badge"><svg viewBox="0 0 100 40" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M8 20 Q34 2 66 20 Q34 38 8 20Z"/><path d="M66 20 L96 6 L86 20 L96 34Z"/><circle cx="24" cy="17" r="2" fill="currentColor" stroke="none"/></svg></span>
+<i></i></div></div>
+
+<!-- ============ ABOUT ============ -->
+<section class="pad-y" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-media" data-reveal="left">
+        <span class="stripe"></span>
+        <div class="frame"><img loading="lazy" decoding="async" src="photo_2.jpg" alt="The Gefstiko menu and branding on a harbour-side table" /></div>
+        <div class="est"><b>2005</b><span>Est.</span></div>
+        <div class="quote-tab"><p>“Cozy, elegant and lively — all at once.”</p></div>
+      </div>
+      <div data-reveal="right">
+        <span class="eyebrow">Our Story</span>
+        <h2 class="section-title">A family taverna,<br>by the harbour.</h2>
+        <p class="story-p">Gefstiko has stood directly across from the main harbour of Limenas since 2005, where the fishing boats come in and the waterfront comes alive at dusk. Traditional at heart and warm in spirit, it's the kind of table you settle into for hours.</p>
+        <p class="story-p">There are no menus of mystery here. What's fresh is laid out on the ice, and what you pick is what lands on your plate — sea bream, red mullet, octopus, calamari, sea bass. No middlemen, no guesswork. Just fish, olive oil, lemon and fire.</p>
+        <div class="about-feats" data-stagger>
+          <div class="af">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="2.4"/></svg>
+            <div><b>Pick from the ice</b><p>Choose the exact fish you want, weighed in front of you.</p></div>
+          </div>
+          <div class="af">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 3v6M6 21c0-5 3-8 6-8s6 3 6 8"/></svg>
+            <div><b>Grilled to order</b><p>Clean over open flame, with house oil and wild Thassos oregano.</p></div>
+          </div>
+          <div class="af">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            <div><b>Right on the water</b><p>Harbour-view terrace, live music on some nights — and no wasps.</p></div>
+          </div>
+        </div>
+        <div class="mini-stats" data-stagger>
+          <div><b>2005</b><span>Serving since</span></div>
+          <div><b>100%</b><span>Wild, hand-picked</span></div>
+          <div><b>Daily</b><span>10:00 – 23:30</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SIGNATURES ============ -->
+<section class="bg-pale pad-y sig-sec" id="signatures">
+  <svg class="sig-deco s1" viewBox="0 0 120 90" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 14c12-9 24-9 36 0s24 9 36 0 24-9 36 0"/><path d="M2 34c12-9 24-9 36 0s24 9 36 0 24-9 36 0"/><path d="M2 54c12-9 24-9 36 0s24 9 36 0 24-9 36 0"/></svg>
+  <svg class="sig-deco s2" viewBox="0 0 100 40" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 20 Q34 2 66 20 Q34 38 8 20Z"/><path d="M66 20 L96 6 L86 20 L96 34Z"/><circle cx="24" cy="17" r="1.8" fill="currentColor"/></svg>
+  <div class="wrap">
+    <div class="sig-head">
+      <div data-reveal>
+        <span class="eyebrow">House Specialties</span>
+        <h2 class="section-title" style="margin-bottom:0">Signature dishes.</h2>
+      </div>
+      <p class="lead" data-reveal>The plates people cross the island for — Aegean soul, cooked simply and generously.</p>
+    </div>
+    <div class="sig-grid" data-stagger>
+      <article class="dish-card" data-magnetic>
+        <div class="pic"><span class="kick">For the table</span><span class="no">01</span><img loading="lazy" decoding="async" src="photo_7.jpg" alt="Mixed grilled seafood platter with calamari, shrimp and fish" /></div>
+        <div class="body">
+          <h3>Mixed Grilled Seafood</h3>
+          <p>A generous platter of the day's best — grilled fish, tender calamari and shrimp over fresh greens. Made to be shared.</p>
+          <span class="tag">The showpiece</span>
+        </div>
+      </article>
+      <article class="dish-card" data-magnetic>
+        <div class="pic"><span class="kick">Very praised</span><span class="no">02</span><img loading="lazy" decoding="async" src="photo_5.jpg" alt="Grilled whole fish, the catch of the day" /></div>
+        <div class="body">
+          <h3>Grilled Catch of the Day</h3>
+          <p>Hand-picked whole fish from the ice, grilled clean with olive oil, lemon and wild oregano.</p>
+          <span class="tag">From the ice</span>
+        </div>
+      </article>
+      <article class="dish-card" data-magnetic>
+        <div class="pic"><span class="kick">House classic</span><span class="no">03</span><img loading="lazy" decoding="async" src="photo_6.jpg" alt="Grilled red mullet with rice and greens" /></div>
+        <div class="body">
+          <h3>Grilled Red Mullet</h3>
+          <p>Barboúni at its simplest and best — flame-grilled, dressed with lemon and Thassos oil.</p>
+          <span class="tag">Whole fish</span>
+        </div>
+      </article>
+    </div>
+    <div class="sig-foot" data-reveal>
+      <span>Chosen fresh from the ice every day — <b>ask your host</b> what's best tonight.</span>
+      <a href="#menu" class="btn ghost" data-magnetic><span>See the full menu</span> <span class="arw">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MENU ============ -->
+<section class="pad-y menu-sec" id="menu">
+  <svg class="menu-deco md1" viewBox="0 0 120 90" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 14c12-9 24-9 36 0s24 9 36 0 24-9 36 0"/><path d="M2 34c12-9 24-9 36 0s24 9 36 0 24-9 36 0"/><path d="M2 54c12-9 24-9 36 0s24 9 36 0 24-9 36 0"/></svg>
+  <svg class="menu-deco md2" viewBox="0 0 100 40" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 20 Q34 2 66 20 Q34 38 8 20Z"/><path d="M66 20 L96 6 L86 20 L96 34Z"/><circle cx="24" cy="17" r="1.8" fill="currentColor"/></svg>
+  <div class="wrap">
+    <div class="menu-head" data-reveal>
+      <span class="eyebrow center">The Menu</span>
+      <h2 class="section-title" style="margin-top:.8rem">What's on the table.</h2>
+      <p class="lead">Traditional Greek seafood, plus the grilled plates that keep the whole family happy. Fish is sold by the day's catch and weight — ask your host for today's selection.</p>
+    </div>
+
+    <div class="menu-tabs" data-reveal role="tablist" aria-label="Menu categories">
+      <button class="menu-tab active" data-tab="starters" role="tab" aria-selected="true" aria-controls="panel-starters">Starters<span class="gk">Mezédes</span></button>
+      <button class="menu-tab" data-tab="sea" role="tab" aria-selected="false" aria-controls="panel-sea">From the Sea<span class="gk">Thálassa</span></button>
+      <button class="menu-tab" data-tab="grill" role="tab" aria-selected="false" aria-controls="panel-grill">Grill &amp; Family<span class="gk">Skhára</span></button>
+      <button class="menu-tab" data-tab="sweet" role="tab" aria-selected="false" aria-controls="panel-sweet">Sweet &amp; Cellar<span class="gk">Glyká</span></button>
+    </div>
+
+    <div class="menu-panel active" data-panel="starters" id="panel-starters" role="tabpanel">
+      <div class="menu-col">
+        <div class="dish"><div><div class="d-name">Tzatziki</div><div class="d-desc">Thick strained yogurt, cucumber, garlic &amp; olive oil.</div></div></div>
+        <div class="dish"><div><div class="d-name">Pita &amp; House Olive Oil</div><div class="d-desc">Warm bread with our Thassos oil and wild oregano.</div></div></div>
+        <div class="dish"><div><div class="d-name">Fried Calamari</div><div class="d-desc">Lightly floured, fried crisp, served with lemon.</div></div></div>
+        <div class="dish"><div><div class="d-name">Fried Anchovies</div><div class="d-desc">Golden and crisp — the taste of a Greek summer.</div></div></div>
+      </div>
+      <div class="menu-col">
+        <div class="dish"><div><div class="d-name">Grilled Octopus <span class="d-tag">Very praised</span></div><div class="d-desc">Flame-grilled over a fennel base with a red-wine reduction.</div></div></div>
+        <div class="dish"><div><div class="d-name">Garídes Saganáki</div><div class="d-desc">Shrimp in a rich tomato sauce with melted feta.</div></div></div>
+        <div class="dish"><div><div class="d-name">Stuffed Calamari</div><div class="d-desc">Squid filled with local cheeses &amp; herbs, grilled crisp.</div></div></div>
+        <div class="dish"><div><div class="d-name">Crispy Fried Zucchini</div><div class="d-desc">Battered light and fried golden, with a cool dip.</div></div></div>
+      </div>
+    </div>
+
+    <div class="menu-panel" data-panel="sea" id="panel-sea" role="tabpanel">
+      <div class="menu-col">
+        <div class="dish"><div><div class="d-name">The Day's Catch <span class="d-tag">From the ice</span></div><div class="d-desc">Hand-picked from the counter, grilled clean to order.</div></div><div class="d-price">€ / kg</div></div>
+        <div class="dish"><div><div class="d-name">Grilled Red Seabream</div><div class="d-desc">Whole, over open flame, with olive oil &amp; lemon.</div></div><div class="d-price">€ / kg</div></div>
+        <div class="dish"><div><div class="d-name">Grilled Sea Bass</div><div class="d-desc">Clean-grilled and dressed simply, the Aegean way.</div></div><div class="d-price">€ / kg</div></div>
+        <div class="dish"><div><div class="d-name">Mixed Fish Plate <span class="d-tag">To share</span></div><div class="d-desc">A generous platter of the day's best, for the table.</div></div></div>
+      </div>
+      <div class="menu-col">
+        <div class="dish"><div><div class="d-name">Shrimp Spaghetti <span class="d-tag">Best-seller</span></div><div class="d-desc">Prawns in a light tomato sauce over artisan pasta.</div></div></div>
+        <div class="dish"><div><div class="d-name">Seafood Linguine</div><div class="d-desc">Mixed Aegean shellfish, garlic and white wine.</div></div></div>
+        <div class="dish"><div><div class="d-name">Seafood Risotto</div><div class="d-desc">Creamy and slow-stirred with mixed shellfish.</div></div></div>
+        <div class="dish"><div><div class="d-name">Kakaviá</div><div class="d-desc">Traditional fisherman's soup with the day's catch.</div></div></div>
+      </div>
+    </div>
+
+    <div class="menu-panel" data-panel="grill" id="panel-grill" role="tabpanel">
+      <div class="menu-col">
+        <div class="dish"><div><div class="d-name">Greek Lamb Chops <span class="d-tag">Local favourite</span></div><div class="d-desc">Char-grilled cutlets with sea salt and Thassos oregano.</div></div></div>
+        <div class="dish"><div><div class="d-name">Chicken Schnitzel <span class="d-tag">Kids love it</span></div><div class="d-desc">Tender, hand-breaded fillet — a family favourite.</div></div></div>
+      </div>
+      <div class="menu-col">
+        <div class="dish"><div><div class="d-name">Traditional Gyros</div><div class="d-desc">Seasoned rotisserie cuts with classic sides.</div></div></div>
+        <div class="dish"><div><div class="d-name">Pastítsio</div><div class="d-desc">Baked pasta layered with minced meat and béchamel.</div></div></div>
+      </div>
+    </div>
+
+    <div class="menu-panel" data-panel="sweet" id="panel-sweet" role="tabpanel">
+      <div class="menu-col">
+        <div class="dish"><div><div class="d-name">Galaktoboúreko</div><div class="d-desc">Warm custard in golden filo, honey syrup, cool cream.</div></div></div>
+        <div class="dish"><div><div class="d-name">Greek Coffee</div><div class="d-desc">From 10:00 — the way to start a morning by the sea.</div></div></div>
+      </div>
+      <div class="menu-col">
+        <div class="dish"><div><div class="d-name">Domaine Costa Lazaridi Rosé</div><div class="d-desc">Crisp Greek rosé — our pour of choice by the water.</div></div><div class="d-price">Bottle</div></div>
+        <div class="dish"><div><div class="d-name">Oúzo &amp; Tsípouro</div><div class="d-desc">The classic seaside companions to grilled fish.</div></div><div class="d-price">Glass</div></div>
+      </div>
+    </div>
+
+    <p class="menu-note" data-reveal>Fish is sold by the day's catch and weight. <b>Ask your host</b> for today's selection and pricing.</p>
+  </div>
+</section>
+
+<!-- ============ SETTING (harbour views · no wasps) ============ -->
+<section class="ambiance" id="setting">
+  <div class="ambiance-bg" id="ambImg"><img loading="lazy" decoding="async" src="photo_4.jpg" alt="Harbour-side terrace tables set for lunch at Gefstiko" /></div>
+  <div class="wave-edge top"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,0 L1440,0 L1440,26 C1200,54 960,10 720,26 C480,42 240,6 0,30 Z" fill="#ffffff"/></svg></div>
+  <div class="wave-edge bot"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,60 L1440,60 L1440,34 C1200,6 960,50 720,34 C480,18 240,54 0,30 Z" fill="#eaf1f4"/></svg></div>
+  <div class="wrap">
+    <div class="ambiance-card" data-reveal>
+      <div class="amb-orn"><i></i><span class="eyebrow" style="color:var(--gold-soft)">The Setting</span></div>
+      <h2>Harbour views.<br>No wasps.</h2>
+      <p>Outdoor seating that looks straight onto the water, live music drifting across the terrace on some nights, and a deeply comfortable table — noticeably free of the wasps that trouble the spots next door. Just the sea breeze and your plate.</p>
+      <div class="amb-feats" data-stagger>
+        <div class="aff"><b>0 m</b><span>To the waterfront</span></div>
+        <div class="aff"><b>Sunset</b><span>Over the boats</span></div>
+        <div class="aff"><b>Live</b><span>Music some nights</span></div>
+      </div>
+      <div class="pills" data-stagger>
+        <span class="pill">Harbour-view <b>terrace</b></span>
+        <span class="pill"><b>Wasp-free</b> comfort</span>
+        <span class="pill"><b>Family</b> friendly</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PICK YOUR CATCH ============ -->
+<section class="bg-pale pad-y" id="catch">
+  <div class="wrap">
+    <div class="catch-head" data-reveal>
+      <span class="eyebrow center">The Ritual</span>
+      <h2 class="section-title" style="margin-top:.7rem">Pick your catch.</h2>
+      <p class="lead" style="margin:0 auto">An open counter packed with raw ice sits at the heart of the taverna. You walk up, you point, and you choose the exact fish that lands on your table. This is the whole idea.</p>
+    </div>
+    <div class="timeline" data-reveal>
+      <div class="tl-track"><i></i></div>
+      <div class="tl-step">
+        <div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12c3-4 6-4 9 0s6 4 9 0"/><path d="M3 17c3-4 6-4 9 0s6 4 9 0"/></svg></div>
+        <h4>Meet the ice</h4><p>Fresh off the boats — bream, mullet, octopus, calamari.</p>
+      </div>
+      <div class="tl-step">
+        <div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="2.4"/></svg></div>
+        <h4>Choose your fish</h4><p>Hand-pick the exact piece, weighed in front of you.</p>
+      </div>
+      <div class="tl-step">
+        <div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v6M6 21c0-5 3-8 6-8s6 3 6 8"/></svg></div>
+        <h4>Grilled to order</h4><p>Clean over open flame with oil, lemon and oregano.</p>
+      </div>
+      <div class="tl-step">
+        <div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 20h16M6 20c0-5 2-9 6-9s6 4 6 9"/></svg></div>
+        <h4>To your table</h4><p>Carried out to the terrace with warm bread and oil.</p>
+      </div>
+    </div>
+    <div class="ice-note" data-reveal>
+      <span class="lbl">Typically on the ice</span>
+      <div class="ice-chips">
+        <span class="ice-chip">Sea Bream <small>Tsipoúra</small></span>
+        <span class="ice-chip">Red Mullet <small>Barboúni</small></span>
+        <span class="ice-chip">Sea Bass <small>Lavráki</small></span>
+        <span class="ice-chip">Octopus <small>Chtapódi</small></span>
+        <span class="ice-chip">Calamari <small>Kalamári</small></span>
+        <span class="ice-chip">Wild Shrimp <small>Garídes</small></span>
+        <span class="ice-chip">Sardines <small>Sardéles</small></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="pad-y rev-sec" id="reviews">
+  <span class="rev-mark">”</span>
+  <svg class="rev-deco r1" viewBox="0 0 120 90" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 14c12-9 24-9 36 0s24 9 36 0 24-9 36 0"/><path d="M2 34c12-9 24-9 36 0s24 9 36 0 24-9 36 0"/><path d="M2 54c12-9 24-9 36 0s24 9 36 0 24-9 36 0"/></svg>
+  <svg class="rev-deco r2" viewBox="0 0 100 40" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 20 Q34 2 66 20 Q34 38 8 20Z"/><path d="M66 20 L96 6 L86 20 L96 34Z"/><circle cx="24" cy="17" r="1.8" fill="currentColor"/></svg>
+  <div class="wrap">
+    <div class="rev-head" data-reveal>
+      <span class="eyebrow center">Kind Words</span>
+      <h2 class="section-title" style="margin-top:.6rem">Guests keep coming back.</h2>
+      <p class="lead" style="margin:0 auto">A few words from the terrace, straight from Tripadvisor.</p>
+    </div>
+    <div class="rev-grid" data-stagger>
+      <div class="review">
+        <span class="quote">”</span>
+        <div class="stars">★★★★★</div>
+        <p>Every time, fresh food cooked with the heart rather than the hands. Absolutely fantastic!</p>
+        <div class="who"><b>Rox</b><span>United Kingdom</span></div>
+      </div>
+      <div class="review">
+        <span class="quote">”</span>
+        <div class="stars">★★★★★</div>
+        <p>Probably the best restaurant in Thassos — the best seafood, the best lamb, the best seashells.</p>
+        <div class="who"><b>Wilhelm C.</b><span>Romania</span></div>
+      </div>
+      <div class="review">
+        <span class="quote">”</span>
+        <div class="stars">★★★★★</div>
+        <p>Food is pure perfection. Everything I tried during my stay was marvellous.</p>
+        <div class="who"><b>Jelena M.</b><span>Visited this season</span></div>
+      </div>
+    </div>
+    <div class="rev-summary" data-stagger>
+      <div class="rs"><div class="stars">★★★★★</div><span>Rated excellent</span></div>
+      <span class="sep"></span>
+      <div class="rs"><b>Tripadvisor &amp; Google</b><span>Hundreds of reviews</span></div>
+      <span class="sep"></span>
+      <div class="rs"><b>Since 2005</b><span>A Thassos favourite</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY (mosaic) ============ -->
+<section class="bg-pale pad-y gal-sec" id="gallery">
+  <svg class="gal-deco g1" viewBox="0 0 120 90" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 14c12-9 24-9 36 0s24 9 36 0 24-9 36 0"/><path d="M2 34c12-9 24-9 36 0s24 9 36 0 24-9 36 0"/><path d="M2 54c12-9 24-9 36 0s24 9 36 0 24-9 36 0"/></svg>
+  <svg class="gal-deco g2" viewBox="0 0 100 40" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 20 Q34 2 66 20 Q34 38 8 20Z"/><path d="M66 20 L96 6 L86 20 L96 34Z"/><circle cx="24" cy="17" r="1.8" fill="currentColor"/></svg>
+  <div class="wrap">
+    <div class="gal-head" data-reveal>
+      <span class="eyebrow center">The Gallery</span>
+      <h2 class="section-title" style="margin-top:.6rem">From our table to your feed.</h2>
+      <a class="feed-handle" href="https://instagram.com/gefstiko_taverna" target="_blank" rel="noopener" data-magnetic>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        @gefstiko_taverna
+      </a>
+    </div>
+    <div class="gbento" data-stagger>
+      <a class="gcell big" href="https://instagram.com/gefstiko_taverna" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="photo_7.jpg" alt="Mixed seafood platter"><span class="ov"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> Mixed seafood platter</span></span></a>
+      <a class="gcell" href="https://instagram.com/gefstiko_taverna" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="photo_5.jpg" alt="Grilled whole fish"><span class="ov"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> Straight off the grill</span></span></a>
+      <a class="gcell" href="https://instagram.com/gefstiko_taverna" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="photo_6.jpg" alt="Grilled red mullet"><span class="ov"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> Grilled red mullet</span></span></a>
+      <a class="gcell follow" href="https://instagram.com/gefstiko_taverna" target="_blank" rel="noopener">
+        <span class="ig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span>
+        <b>Follow us</b><span>@gefstiko_taverna</span>
+      </a>
+      <a class="gcell" href="https://instagram.com/gefstiko_taverna" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="photo_4.jpg" alt="Terrace tables by the water"><span class="ov"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> Tables by the water</span></span></a>
+      <a class="gcell" href="https://instagram.com/gefstiko_taverna" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="photo_2.jpg" alt="The Gefstiko menu"><span class="ov"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> Pick from the ice</span></span></a>
+      <a class="gcell" href="https://instagram.com/gefstiko_taverna" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="photo_8.jpg" alt="Shrimp youvetsi"><span class="ov"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> Shrimp youvétsi</span></span></a>
+      <a class="gcell" href="https://instagram.com/gefstiko_taverna" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="photo_3.jpg" alt="Rosé by the harbour"><span class="ov"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> Rosé by the harbour</span></span></a>
+      <a class="gcell" href="https://instagram.com/gefstiko_taverna" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="photo_1.jpg" alt="Galaktoboureko dessert"><span class="ov"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> Galaktoboúreko</span></span></a>
+    </div>
+    <div class="gal-cta" data-reveal>
+      <a href="https://instagram.com/gefstiko_taverna" class="btn ghost" target="_blank" rel="noopener" data-magnetic><span>Follow on Instagram</span> <span class="arw">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VISIT ============ -->
+<section class="pad-y" id="visit">
+  <div class="wrap">
+    <div class="visit-grid">
+      <div data-reveal="left">
+        <span class="eyebrow">Find Us</span>
+        <h2>Across from<br>the harbour.</h2>
+        <p class="lead">We don't take bookings — and that's part of the charm. Walk down to the waterfront and find us across from the boats.</p>
+        <div class="info-block" data-stagger>
+          <div class="info">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            <div><h4>Location</h4><a href="https://maps.google.com/?q=Gefstiko+Limenas+Thassos" target="_blank" rel="noopener">Avgoustou Theologiti,<br>Limenas Thassos 640 04</a><div class="sub">Directly across from the main harbour &amp; waterfront</div></div>
+          </div>
+          <div class="info">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L20 13l1 4v2a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1Z"/></svg>
+            <div><h4>Call us</h4><a href="tel:+306985129828">+30 698 512 9828</a> · <a href="tel:+302593023573">+30 25930 23573</a></div>
+          </div>
+          <div class="info">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <div><h4>Opening Hours</h4>
+              <div class="hours-table"><div class="hours-row"><span>Monday – Sunday</span><span>10:00 – 23:30</span></div></div>
+              <div class="sub" id="openState">Open daily</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-reveal="right">
+        <div class="map-card">
+          <iframe title="Gefstiko location" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Limenas%20Thassos%20harbour&z=15&output=embed"></iframe>
+          <div class="map-badge"><b>Gefstiko Seafood</b><span>Limenas, Thassos · on the waterfront</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-col">
+        <div class="foot-brand"><img loading="lazy" decoding="async" src="photo_9.jpg" alt="Gefstiko"><b>Gefstiko</b></div>
+        <p class="foot-desc">A traditional Greek seafood taverna on the harbour of Limenas, Thassos. Since 2005 — hand-picked catch, grilled to order, served by the water.</p>
+        <div class="socials">
+          <a class="soc" href="https://instagram.com/gefstiko_taverna" target="_blank" rel="noopener" aria-label="Instagram" data-magnetic><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a class="soc" href="https://facebook.com/gefstiko" target="_blank" rel="noopener" aria-label="Facebook" data-magnetic><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h2.7l.4-3H13V9c0-.9.3-1.5 1.6-1.5H16V4.8c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4V11H7.3v3H9.8v8H13Z"/></svg></a>
+          <a class="soc" href="tel:+306985129828" aria-label="Call" data-magnetic><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L20 13l1 4v2a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1Z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h5>Explore</h5>
+        <a href="#about">About</a><a href="#signatures">Dishes</a><a href="#menu">Menu</a><a href="#catch">The Catch</a><a href="#reviews">Reviews</a>
+      </div>
+      <div class="foot-col">
+        <h5>Hours</h5>
+        <p>Monday – Sunday</p><p>10:00 – 23:30</p><p style="color:var(--gold-soft)">Open daily</p>
+      </div>
+      <div class="foot-col">
+        <h5>Find Us</h5>
+        <p>Avgoustou Theologiti,<br>Limenas Thassos 640 04</p>
+        <a href="tel:+306985129828">+30 698 512 9828</a>
+        <a href="tel:+302593023573">+30 25930 23573</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Gefstiko Seafood · Limenas, Thassos</span>
+      <span>No bookings — just walk in.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  window.addEventListener("load", function(){ setTimeout(function(){ var l=document.getElementById("loader"); if(l) l.classList.add("done"); }, 1400); });
+  setTimeout(function(){ var l=document.getElementById("loader"); if(l) l.classList.add("done"); }, 3400);
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  var nav = document.getElementById("nav");
+  window.addEventListener("scroll", function(){ nav.classList.toggle("scrolled", window.scrollY>30); }, {passive:true});
+
+  var burger = document.getElementById("burger"), mMenu = document.getElementById("mMenu");
+  function closeMenu(){ burger.classList.remove("open"); mMenu.classList.remove("open"); document.body.style.overflow=""; }
+  burger.addEventListener("click", function(){
+    var open = burger.classList.toggle("open");
+    mMenu.classList.toggle("open", open);
+    document.body.style.overflow = open ? "hidden" : "";
+  });
+  mMenu.querySelectorAll("a").forEach(function(a){ a.addEventListener("click", closeMenu); });
+  document.getElementById("mClose").addEventListener("click", closeMenu);
+  document.addEventListener("keydown", function(e){ if(e.key==="Escape" && mMenu.classList.contains("open")) closeMenu(); });
+
+  /* ----- Menu tabs ----- */
+  var tabs = document.querySelectorAll(".menu-tab"), panels = document.querySelectorAll(".menu-panel");
+  tabs.forEach(function(t){
+    t.addEventListener("click", function(){
+      var name = t.getAttribute("data-tab");
+      tabs.forEach(function(x){ var on=x===t; x.classList.toggle("active", on); x.setAttribute("aria-selected", on?"true":"false"); });
+      panels.forEach(function(p){ p.classList.toggle("active", p.getAttribute("data-panel")===name); });
+    });
+  });
+
+  /* ----- Reveal ----- */
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
+  }, {threshold:0.12, rootMargin:"0px 0px -8% 0px"});
+  document.querySelectorAll("[data-reveal],[data-stagger]").forEach(function(el){ io.observe(el); });
+  document.querySelectorAll("[data-stagger]").forEach(function(p){
+    Array.prototype.forEach.call(p.children, function(c,i){ c.style.transitionDelay = (i*0.08)+"s"; });
+  });
+
+  /* ----- Parallax (setting image) ----- */
+  var ambImg = document.getElementById("ambImg"), ticking=false;
+  function parallax(){
+    if(ambImg){ var r=ambImg.getBoundingClientRect(); var prog=(window.innerHeight-r.top)/(window.innerHeight+r.height);
+      var im=ambImg.querySelector("img"); if(im) im.style.transform="translateY("+(prog*60-30)+"px)"; }
+    ticking=false;
+  }
+  if(!reduce){ window.addEventListener("scroll", function(){ if(!ticking){ requestAnimationFrame(parallax); ticking=true; } }, {passive:true}); parallax(); }
+
+  /* ----- Magnetic ----- */
+  if(!reduce && window.matchMedia("(hover:hover)").matches){
+    document.querySelectorAll("[data-magnetic]").forEach(function(el){
+      var s = el.classList.contains("soc") ? 0.45 : 0.28;
+      el.addEventListener("mousemove", function(e){
+        var r=el.getBoundingClientRect();
+        el.style.transform = "translate("+((e.clientX-r.left-r.width/2)*s)+"px,"+((e.clientY-r.top-r.height/2)*s)+"px)";
+      });
+      el.addEventListener("mouseleave", function(){ el.style.transform=""; });
+    });
+  }
+
+  /* ----- Custom cursor ----- */
+  var cursor=document.getElementById("cursor"), dot=document.getElementById("cursorDot");
+  if(cursor && window.matchMedia("(hover:hover)").matches){
+    var cx=0,cy=0,tx=0,ty=0;
+    document.addEventListener("mousemove", function(e){ tx=e.clientX; ty=e.clientY;
+      dot.style.transform="translate("+tx+"px,"+ty+"px) translate(-50%,-50%)"; });
+    (function loop(){ cx+=(tx-cx)*0.18; cy+=(ty-cy)*0.18;
+      cursor.style.transform="translate("+cx+"px,"+cy+"px) translate(-50%,-50%)"; requestAnimationFrame(loop); })();
+    document.querySelectorAll("a,button,[data-magnetic],.dish-card,.review,.tl-step,.gcell,.ice-chip").forEach(function(el){
+      el.addEventListener("mouseenter", function(){ cursor.classList.add("grow"); });
+      el.addEventListener("mouseleave", function(){ cursor.classList.remove("grow"); });
+    });
+  }
+
+  /* ----- Open / closed state ----- */
+  (function(){
+    var now=new Date(), h=now.getHours()+now.getMinutes()/60, open=h>=10 && h<23.5, el=document.getElementById("openState");
+    if(el) el.innerHTML = open ? '<span style="color:#0e4f73">● Open now</span> · until 23:30' : '<span style="color:#5d7280">● Closed now</span> · opens 10:00';
+  })();
+
+  /* ----- Smooth anchors ----- */
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener("click", function(e){
+      var id=a.getAttribute("href"); if(id.length<2) return;
+      var t=document.querySelector(id); if(!t) return;
+      e.preventDefault();
+      window.scrollTo({top: t.getBoundingClientRect().top+window.scrollY-64, behavior: reduce?"auto":"smooth"});
+    });
+  });
+})();
+</script>
+</body>
+</html>
